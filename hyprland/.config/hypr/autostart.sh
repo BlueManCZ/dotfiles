@@ -11,7 +11,7 @@ exists() {
 # Starts a program if it exists.
 start() {
   if exists $1; then
-    $1 &
+    $1 ${@:2} &
   else
     echo "$1 doesn't exist."
   fi
@@ -30,9 +30,14 @@ start gentoo-pipewire-launcher
 # | https://github.com/Alexays/Waybar
 start launch-waybar.sh
 
+# Telegram
+start telegram-desktop -autostart -startintray
+
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1
 
-if exists gnome-keyring-daemon; then
-  gnome-keyring-daemon --start
-fi
+start gnome-keyring-daemon --start
+
+# Set cursor theme
+# https://github.com/clayrisser/breeze-hacked-cursor-theme
+hyprctl setcursor breeze-hacked-cursor-theme 24
