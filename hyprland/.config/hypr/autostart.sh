@@ -29,3 +29,10 @@ start gentoo-pipewire-launcher
 # Waybar
 # | https://github.com/Alexays/Waybar
 start launch-waybar.sh
+
+# Authentication and keyring
+start /usr/libexec/polkit-gnome-authentication-agent-1
+
+if exists gnome-keyring-daemon; then
+  gnome-keyring-daemon --start
+fi
