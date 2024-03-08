@@ -31,7 +31,16 @@ start gentoo-pipewire-launcher
 start launch-waybar.sh
 
 # Telegram
+# | https://github.com/telegramdesktop/tdesktop
 start telegram-desktop -autostart -startintray
+
+# OpenRGB
+# | https://github.com/CalcProgrammer1/OpenRGB
+start openrgb --startminimized
+
+# Roon MPRIS extension
+# | https://github.com/brucejcooper/roon-mpris
+start roon-mpris > /dev/null
 
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1
