@@ -32,7 +32,7 @@ start launch-waybar.sh
 
 # Telegram
 # | https://github.com/telegramdesktop/tdesktop
-start telegram-desktop -autostart -startintray
+start telegram-desktop -startintray
 
 # OpenRGB
 # | https://github.com/CalcProgrammer1/OpenRGB
