@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Automatically restart the Waybar after the config change.
 # Inspired by: https://github.com/Alexays/Waybar/issues/961
@@ -7,7 +7,7 @@
 CONFIG_FILE="$HOME/.config/waybar/config.jsonc"
 STYLE_FILE="$HOME/.config/waybar/style.css"
 
-if ! command -v "inotifywait" &> "/dev/null"; then
+if ! command -v "inotifywait" &>"/dev/null"; then
   echo "Error: inotifywait binary not found. Please install it and run this script again."
   exit 1
 fi

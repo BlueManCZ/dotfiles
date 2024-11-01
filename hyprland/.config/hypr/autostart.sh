@@ -1,11 +1,11 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Add custom scripts to $PATH
 PATH="$PATH:$HOME/.config/hypr/scripts"
 
 # Checks for the existence of a program.
 exists() {
-  command -v "$1" &> "/dev/null";
+  command -v "$1" &>"/dev/null";
 }
 
 # Starts a program if it exists.
@@ -40,7 +40,7 @@ start openrgb --startminimized
 
 # Roon MPRIS extension
 # | https://github.com/brucejcooper/roon-mpris
-start roon-mpris > /dev/null
+start roon-mpris >/dev/null
 
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1

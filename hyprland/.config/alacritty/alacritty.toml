@@ -1,0 +1,17 @@
+[window]
+padding = { x = 10, y = 10 }
+decorations = "None"
+opacity = 0.95
+
+[colors.normal]
+black	= "#06192a"
+red	= "#fa3532"
+green	= "#48ff6e"
+yellow	= "#ffc94f"
+blue	= "#39c1ff"
+magenta = "#8d3faf"
+cyan	= "#0ca489"
+white	= "#cbd0d6"
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
