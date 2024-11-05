@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Add custom scripts to $PATH
-PATH="$PATH:$HOME/.config/hypr/scripts"
+PATH="$PATH:$HOME/.local/bin:$HOME/.config/hypr/scripts"
 
 # Checks for the existence of a program.
 exists() {
@@ -41,6 +41,10 @@ start openrgb --startminimized
 # Roon MPRIS extension
 # | https://github.com/brucejcooper/roon-mpris
 start roon-mpris >/dev/null
+
+# Geary mail client
+# | https://gitlab.gnome.org/GNOME/geary
+start geary --gapplication-service
 
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1
