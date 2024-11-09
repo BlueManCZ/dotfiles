@@ -46,6 +46,10 @@ start roon-mpris >/dev/null
 # | https://gitlab.gnome.org/GNOME/geary
 start geary --gapplication-service
 
+# Network Manager applet
+# | https://gitlab.gnome.org/GNOME/network-manager-applet
+start nm-applet
+
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1
 
