@@ -50,6 +50,10 @@ start geary --gapplication-service
 # | https://gitlab.gnome.org/GNOME/network-manager-applet
 start nm-applet
 
+# Wallpaper
+# | https://github.com/hyprwm/hyprpaper
+start hyprpaper
+
 # Authentication and keyring
 start /usr/libexec/polkit-gnome-authentication-agent-1
 
