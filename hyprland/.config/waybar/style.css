@@ -1,0 +1,94 @@
+#waybar {
+  background: transparent;
+}
+
+.module {
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#workspaces {
+  background: transparent;
+  margin-right: 5px;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+#workspaces button {
+  padding: 0;
+}
+#workspaces button.active {
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 6px;
+  color: #33ccff;
+  border: solid 2px #33ccff;
+  font-weight: 900;
+}
+
+#network {
+  background: #33ccff;
+  color: rgb(4, 29, 38);
+}
+#network.disconnected {
+  color: rgb(4, 29, 38);
+  background: #666666;
+}
+
+#mpris {
+  color: #33ccff;
+  background: rgba(4, 29, 38, 0.8);
+}
+#mpris.spotify {
+  color: #1ed661;
+  background: rgba(4, 33, 15, 0.8);
+}
+#mpris.paused {
+  color: silver;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+#custom-launcher {
+  padding-right: 15px;
+}
+
+#custom-clock {
+  color: #33ccff;
+  font-weight: 900;
+  background: rgba(4, 29, 38, 0.8);
+}
+
+#custom-date {
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#clock {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 5px;
+}
+
+#waybar.empty #window {
+  background-color: transparent;
+}
+#waybar.spotify #window {
+  background-color: rgba(4, 33, 15, 0.8);
+  color: #1ed661;
+}
+
+/*# sourceMappingURL=style.css.map */

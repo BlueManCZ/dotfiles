@@ -1,0 +1,112 @@
+$blue: #33ccff;
+$green: #1ed661;
+
+$blue-background: rgba(4, 29, 38, 0.8);
+$green-background: rgba(4, 33, 15, 0.8);
+$black-background: rgba(0, 0, 0, .5);
+
+@mixin tile {
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "JetBrains Mono Nerd Font", monospace;
+    background: $black-background;
+}
+
+@mixin connect-right {
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@mixin connect-left {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#waybar {
+    background: transparent;
+}
+
+.module {
+    @include tile;
+}
+
+#workspaces {
+    background: transparent;
+    margin-right: 5px;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+
+    button {
+        padding: 0;
+
+        &.active {
+            @include tile;
+            padding: 4px 6px;
+            color: $blue;
+            border: solid 2px $blue;
+            font-weight: 900;
+        }
+    }
+}
+
+#network {
+    background: $blue;
+    color: rgba(4, 29, 38, 1);
+
+    &.disconnected {
+        color: rgba(4, 29, 38, 1);
+        background: #666666;
+    }
+}
+
+#mpris {
+    color: $blue;
+    background: $blue-background;
+
+    &.spotify {
+        color: $green;
+        background: $green-background;
+    }
+
+    &.paused {
+        color: silver;
+        background: rgba(30, 30, 30, 0.8);
+    }
+}
+
+#custom-launcher {
+    padding-right: 15px;
+}
+
+#custom-clock {
+    color: $blue;
+    font-weight: 900;
+    background: $blue-background;
+}
+
+#custom-date {
+    @include connect-right;
+}
+
+#clock {
+    @include connect-left;
+    padding-left: 5px;
+}
+
+#waybar {
+    &.empty #window {
+        background-color: transparent;
+    }
+
+    &.spotify #window {
+        background-color: $green-background;
+        color: $green;
+    }
+}
