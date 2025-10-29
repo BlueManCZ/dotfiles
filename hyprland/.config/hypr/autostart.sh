@@ -17,6 +17,14 @@ start() {
   fi
 }
 
+# Waybar
+# | https://github.com/Alexays/Waybar
+start launch-waybar.sh
+
+# Wallpaper
+# | https://github.com/hyprwm/hyprpaper
+start hyprpaper
+
 # Albert launcher
 # | https://github.com/albertlauncher/albert
 start albert
@@ -26,9 +34,23 @@ start albert
 # | https://wiki.gentoo.org/wiki/PipeWire#gentoo-pipewire-launcher
 start gentoo-pipewire-launcher
 
-# Waybar
-# | https://github.com/Alexays/Waybar
-start launch-waybar.sh
+# Roon MPRIS extension
+# | https://github.com/brucejcooper/roon-mpris
+start roon-mpris >/dev/null
+
+# Geary mail client
+# | https://gitlab.gnome.org/GNOME/geary
+start geary --gapplication-service
+
+# Authentication and keyring
+start /usr/libexec/polkit-gnome-authentication-agent-1
+start gnome-keyring-daemon --start
+
+# Set cursor theme
+# https://github.com/clayrisser/breeze-hacked-cursor-theme
+hyprctl setcursor breeze-hacked-cursor-theme 24
+
+sleep 2
 
 # Telegram
 # | https://github.com/telegramdesktop/tdesktop
@@ -38,27 +60,9 @@ start telegram-desktop -startintray
 # | https://github.com/CalcProgrammer1/OpenRGB
 start openrgb --startminimized
 
-# Roon MPRIS extension
-# | https://github.com/brucejcooper/roon-mpris
-start roon-mpris >/dev/null
-
-# Geary mail client
-# | https://gitlab.gnome.org/GNOME/geary
-start geary --gapplication-service
-
 # Network Manager applet
 # | https://gitlab.gnome.org/GNOME/network-manager-applet
 start nm-applet
 
-# Wallpaper
-# | https://github.com/hyprwm/hyprpaper
-start hyprpaper
-
-# Authentication and keyring
-start /usr/libexec/polkit-gnome-authentication-agent-1
-
-start gnome-keyring-daemon --start
-
-# Set cursor theme
-# https://github.com/clayrisser/breeze-hacked-cursor-theme
-hyprctl setcursor breeze-hacked-cursor-theme 24
+# MEGA sync client
+start megasync

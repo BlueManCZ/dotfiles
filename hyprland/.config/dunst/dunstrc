@@ -3,7 +3,7 @@
 
 [global]
     # Which monitor should the notifications be displayed on.
-    monitor = DP-3
+    monitor = DP-2
 
     # Dynamic width from 300 to 400
     width = (300, 400)
@@ -12,10 +12,10 @@
     height = 90
 
     # Position the notification in the top center
-    origin = top-center
+    origin = top-right
 
     # Offset from the origin
-    offset = 10x0
+    offset = 10x10
 
     # Maximum number of notification (0 means no limit)
     notification_limit = 3
@@ -31,7 +31,7 @@
     frame_width = 0
 
     # Defines color of the frame around the notification window.
-    frame_color = "#33ccff"
+    frame_color = "#b4e718"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -99,8 +99,8 @@
     timeout = 10
 
 [urgency_normal]
-    background = "#091d24"
-    foreground = "#33ccff"
+    background = "#242e05"
+    foreground = "#b4e718"
     timeout = 10
     override_pause_level = 30
 

@@ -108,7 +108,7 @@
     "interval": 10
   },
   "network": {
-    // "interface": "ppp0",
+    "interface": "e*",
     // "format": "↕️{bandwidthTotalBytes}",
     "format": "󰹹{bandwidthTotalBytes}",
     "format-disconnected": "No connection",

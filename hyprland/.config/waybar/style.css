@@ -33,13 +33,13 @@
   font-family: "JetBrains Mono Nerd Font", monospace;
   background: rgba(0, 0, 0, 0.5);
   padding: 4px 6px;
-  color: #33ccff;
-  border: solid 2px #33ccff;
+  color: #b4e718;
+  border: solid 2px #b4e718;
   font-weight: 900;
 }
 
 #network {
-  background: #33ccff;
+  background: #b4e718;
   color: rgb(4, 29, 38);
 }
 #network.disconnected {
@@ -48,8 +48,8 @@
 }
 
 #mpris {
-  color: #33ccff;
-  background: rgba(4, 29, 38, 0.8);
+  color: #b4e718;
+  background: #242e05;
 }
 #mpris.spotify {
   color: #1ed661;
@@ -65,9 +65,9 @@
 }
 
 #custom-clock {
-  color: #33ccff;
+  color: #b4e718;
   font-weight: 900;
-  background: rgba(4, 29, 38, 0.8);
+  background: #242e05;
 }
 
 #custom-date {
