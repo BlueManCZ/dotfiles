@@ -507,13 +507,13 @@
   "mpris": {
     "interval": 1,
     "format": "{player_icon} {artist} - {title}",
-    "format-paused": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {artist} - {title}",
     "player-icons": {
       "default": "\udb81\udf5a",
       "spotify": "\uf1bc"
     },
     "status-icons": {
-      "paused": "⏸"
+      "paused": "\uf28b"
     },
     "ignored-players": [
       "firefox"

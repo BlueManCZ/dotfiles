@@ -35,8 +35,8 @@ start albert
 start gentoo-pipewire-launcher
 
 # Roon MPRIS extension
-# | https://github.com/brucejcooper/roon-mpris
-start roon-mpris >/dev/null
+# | https://github.com/BlueManCZ/roon-pipe
+start roonpipe >/dev/null
 
 # Geary mail client
 # | https://gitlab.gnome.org/GNOME/geary
