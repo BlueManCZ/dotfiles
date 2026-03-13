@@ -3,6 +3,12 @@
 # Add custom scripts to $PATH
 PATH="$PATH:$HOME/.local/bin:$HOME/.config/hypr/scripts"
 
+# Wait for Hyprland to be ready (monitors configured)
+for i in $(seq 1 50); do
+  hyprctl monitors -j 2>/dev/null | grep -q '"id"' && break
+  sleep 0.1
+done
+
 # Checks for the existence of a program.
 exists() {
   command -v "$1" &>"/dev/null";
@@ -42,9 +48,8 @@ start roonpipe >/dev/null
 # | https://gitlab.gnome.org/GNOME/geary
 start geary --gapplication-service
 
-# Authentication and keyring
+# Authentication agent
 start /usr/libexec/polkit-gnome-authentication-agent-1
-start gnome-keyring-daemon --start
 
 # Set cursor theme
 # https://github.com/clayrisser/breeze-hacked-cursor-theme
@@ -62,7 +67,7 @@ start openrgb --startminimized
 
 # Network Manager applet
 # | https://gitlab.gnome.org/GNOME/network-manager-applet
-start nm-applet
+#start nm-applet
 
 # MEGA sync client
 start megasync
