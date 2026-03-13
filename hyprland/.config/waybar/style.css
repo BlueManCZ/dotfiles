@@ -60,10 +60,6 @@
   background: rgba(30, 30, 30, 0.8);
 }
 
-#custom-launcher {
-  padding-right: 15px;
-}
-
 #cpu,
 #memory,
 #temperature {
@@ -122,6 +118,14 @@
   color: #b4e718;
   font-weight: 900;
   background: #242e05;
+}
+
+#custom-grouptabs.active {
+  color: #888888;
+}
+#custom-grouptabs.empty {
+  padding: 0;
+  margin: 0;
 }
 
 #waybar.empty #window {
