@@ -107,15 +107,11 @@ $subtle: #a0a0a0;
 }
 
 #privacy {
-    padding: 0;
-    margin-top: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    @include tile;
+    padding: 3px 6px 3px 10px;
 }
 
 #privacy-item {
-    padding: 4px 8px;
-
     &.screenshare {
         color: #ff8800;
     }

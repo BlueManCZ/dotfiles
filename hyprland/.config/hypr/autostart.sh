@@ -3,12 +3,6 @@
 # Add custom scripts to $PATH
 PATH="$PATH:$HOME/.local/bin:$HOME/.config/hypr/scripts"
 
-# Wait for Hyprland to be ready (monitors configured)
-for i in $(seq 1 50); do
-  hyprctl monitors -j 2 >/dev/null | grep -q '"id"' && break
-  sleep 0.1
-done
-
 # Checks for the existence of a program.
 exists() {
   command -v "$1" &>"/dev/null";
@@ -38,7 +32,7 @@ start albert
 # PipeWire
 # | https://gitlab.freedesktop.org/pipewire/pipewire
 # | https://wiki.gentoo.org/wiki/PipeWire#gentoo-pipewire-launcher
-gentoo-pipewire-launcher restart &
+start gentoo-pipewire-launcher restart
 
 # Roon MPRIS extension
 # | https://github.com/BlueManCZ/roon-pipe

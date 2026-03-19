@@ -82,15 +82,17 @@
 }
 
 #privacy {
-  padding: 0;
   margin-top: 10px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 6px 3px 10px;
 }
 
-#privacy-item {
-  padding: 4px 8px;
-}
 #privacy-item.screenshare {
   color: #ff8800;
 }
